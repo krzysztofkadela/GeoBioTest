@@ -1,0 +1,124 @@
+body {
+    background-color: lightslategray;
+    text-align: center;
+    
+}
+
+#main_game { 
+  width: 90%;
+  border: 3px solid;
+  border-color: black;
+  border-radius: 15px;
+  height: fit-content;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  width: 60vw;
+  height: fit-content;
+  background-color: black;
+  color: #fafafa;
+  text-align: center;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+
+.btn_game_type {
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 15px 32px;
+  font-size: 100%;
+  background-color: #3f3204;
+  color: #fafafa;
+}
+.btn_game_type:hover{
+  background-color: #fafafa;
+  color: black;
+}
+
+#question_area {
+ width: 60vw;
+ height: fit-content;
+ border: 2px solid #3f3204;
+ background-color: #fafafa;
+ color: black;
+ display: flex;
+ flex-direction: column;
+ padding: 10px 10px;
+ border: 2px solid #3f3204;
+ border-radius: 5px;
+}
+
+#answer_area {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #3f3204;
+  border-radius: 5px;
+}
+
+.p_answer {
+  background-color: #9f9999;
+  color: #111010;
+  width: 40vw;
+  margin-top: 10px;
+  text-align: left;
+  padding: 5px 5px;
+}
+
+
+#answer_box{
+  background-color: #bdeb9a;
+  color: #111010;
+  width: 60px;
+  height: 30px;
+  margin-top: 10px;
+  text-align: left;
+  padding: 5px 5px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.btn_submit {
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 15px 32px;
+  font-size: 100%;
+  background-color: #3a3a38;
+  color: #fafafa;
+}
+
+.btn_submit:hover {
+  background-color: azure;
+  color: #3f3204;
+}
+
+#score {
+  width: 65vw;
+  height: fit-content;
+  background-color: black;
+  color: #fafafa;
+  border: 2px solid #fafafa;
+  border-radius: 5px;
+}
+.hidden{
+  display: none;
+}
+
+#welcome{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #3a3a38;
+}
