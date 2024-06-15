@@ -18,6 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: url(../images/pexels-pixabay-147411.jpg) no-repeat center center/cover;
 }
 
 .heading {
@@ -118,10 +119,29 @@ body {
 
 #welcome{
     position: absolute;
-    background-color: rgba(147, 91, 236, 0.7);
+    background-color: rgba(32, 135, 139, 0.7);
     bottom: 30px;
     width: 45vw;
     min-height: 300px;
     padding-top: 40px;
     padding-left: 10px;
+    border-radius: 10px;
+}
+#welcome h2{
+  font-size: 35px;
+}
+#start{
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 15px 32px;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: #a7a7a5;
+  color: #0d0d0d;
+  border: 2px solid #f3f3eb;
+  border-radius: 10px;
+  box-shadow:5px 5px 5px #9f9999;
+}
+#start:hover {
+  background-color: #83aaf2;
 }
