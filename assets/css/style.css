@@ -1,5 +1,5 @@
 body {
-    background-color: lightslategray;
+    background-color: rgb(232, 242, 93);
     text-align: center;
     
 }
@@ -111,14 +111,17 @@ body {
   border-radius: 5px;
 }
 .hidden{
-  display: none;
+  
+ visibility: hidden;
 }
 
+
 #welcome{
-  position: relative;
-  width: 300px;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #3a3a38;
+    position: absolute;
+    background-color: rgba(147, 91, 236, 0.7);
+    bottom: 30px;
+    width: 45vw;
+    min-height: 300px;
+    padding-top: 40px;
+    padding-left: 10px;
 }

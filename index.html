@@ -13,19 +13,21 @@
 <body>
     <div id="main_game">
       <div id = "welcome">
+        <h2>Are you ready to chack your knowlage?</h2>
         <button class ="btn_game_type" id ="Start">Start</button>
       </div>
-        <div class = "heading" id="select_game">
+      <div class = "hidden" id="question_area">
+        
+        <div class = "hidden" id="select_game">
             <h1 id="logo">Geography or Biology.</h1>
-            <h2>In what field do you want to test your knowledge?</h2>
-            <div id="choice">
+            <h2 >In what field do you want to test your knowledge?</h2>
+            <div class = "hidden" id="choice">
                 <button  class="btn_game_type" id="game_geography">Geography</button>
                 <button  class="btn_game_type" id="game_biology">Biology</button>
             </div>
         </div>
-        <div id="question_area">
-            <h2 id = question>"question will be here!"</h2>
-            <ul>
+            <h2 class = "hidden" id = question>"question will be here!"</h2>
+            <ul class = "hidden">
                 <li>
                   <input type="radio" name="answer" id="a" class="answer">
                   <label for="a" id="a_text">Answer</label>
@@ -44,17 +46,17 @@
                 </li>
               </ul>
 
-            <div id="answer_area">
-                <p class = "p_answer" id answer_1>Answer 1</p>
-                <p class = "p_answer" id answer_2>Answer 1</p>
-                <p class = "p_answer" id answer_3>Answer 1</p>
-                <p class = "p_answer" id answer_4>Answer 1</p>
+            <div class = "hidden" id="answer_area">
+                <p class = "p_answer hidden" id answer_1>Answer 1</p>
+                <p class = "p_answer hidden" id answer_2>Answer 1</p>
+                <p class = "p_answer hidden" id answer_3>Answer 1</p>
+                <p class = "p_answer hidden" id answer_4>Answer 1</p>
                 <input id = "answer_box" type="number">
                 <button data-type="submite" id = "submit" class = "btn_submit">Submit Answer!</button>
             </div>
 
         </div>
-        <div id="score">
+        <div class = "hidden" id="score">
             <p id = "player_name">Player name: <span id="name">Name</span></p>
             <p class="scores">Correct Answers <span id="correct">0</span></p>
             <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
