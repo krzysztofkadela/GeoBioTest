@@ -1,60 +1,167 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
-    background-color: rgb(232, 242, 93);
-    text-align: center;
-    
+  background-color: lightslategray;
+  text-align: center;
+
 }
 
-#main_game { 
+#main_game {
+  margin-top: 95px;
+  position: relative;
   width: 90%;
   border: 3px solid;
   border-color: black;
   border-radius: 15px;
-  height: fit-content;
+  height: 800px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding-top: 5px;
   padding-bottom: 5px;
+  background: url(../images/earth.jpg) no-repeat center center/cover;
+}
+
+#welcome {
+  position: absolute;
+  background-color: rgba(32, 135, 139, 0.7);
+  left: 12vw;
+  bottom: 20vh;
+  width: 60vw;
+  height: fit-content;
+  padding: 10px 10px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url(../images/pexels-pixabay-147411.jpg) no-repeat center center/cover;
 }
 
-.heading {
-  width: 60vw;
-  height: fit-content;
-  background-color: black;
+#welcome h2 {
+  font-size: 25px;
+}
+
+#welcome h1 {
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+#start {
+  margin-top: 30px;
+  border-radius: 2px;
+  padding: 15px 32px;
+  font-size: 35px;
+  font-weight: 600;
+  background-color: #a7a7a5;
+  color: #0d0d0d;
+  border: 2px solid #f3f3eb;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #9f9999;
+}
+
+#start:hover {
+  background-color: #83aaf2;
+}
+
+#myInput{
+  height: 25px;
+  width: 160px;
+  background-color: #9f9999;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 15px;
+}
+
+#select_game {
+  position: absolute;
+  background-color: rgba(32, 135, 139, 0.2);
+  left: 4vw;
+  bottom: 30vh;
+  width: 75vw;
+  height: 65vh;
+  padding: 10px 10px;
+  border-radius: 10px;
   color: #fafafa;
   text-align: center;
-  padding: 15px 10px;
   border-radius: 5px;
 }
 
-.btn_game_type {
-  margin-top: 20px;
-  border-radius: 2px;
-  padding: 15px 32px;
-  font-size: 100%;
-  background-color: #3f3204;
-  color: #fafafa;
+#choice_container {
+  padding: 5px 5px;
+  height: fit-content;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  background-color: rgba(32, 135, 139, 0.1);
+
 }
-.btn_game_type:hover{
+
+.choice_option {
+  width: 30vw;
+  height: 38vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #9f9999;
+  border: 2px solid #f3eeee;
+}
+
+#choice_bio {
+  background: url(../images/pexels-jerseypics.jpg) no-repeat center center/cover;
+}
+
+#choice_geo {
+  background: url(../images/pexels-pixabay.jpg) no-repeat center center/cover;
+}
+
+.btn_game_type {
+  margin-top: 20dvh;
+  border-radius: 10px;
+  padding: 4px 4px;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #1a4d54;
+  color: #f7f2f2;
+}
+
+.btn_game_type:hover {
   background-color: #fafafa;
   color: black;
 }
 
 #question_area {
- width: 60vw;
- height: fit-content;
- border: 2px solid #3f3204;
- background-color: #fafafa;
- color: black;
- display: flex;
- flex-direction: column;
- padding: 10px 10px;
- border: 2px solid #3f3204;
- border-radius: 5px;
+  position: absolute;
+  left: 4.5vw;
+  bottom: 6vh;
+  width: 75vw;
+  height: 65vh;
+  padding: 10px 10px;
+  border: 2px solid #3f3204;
+  border-radius: 5px;
+  background-color: rgba(144, 180, 242, 0.4);
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+#question_list{
+  list-style: none;
+  text-align: left;
+  background-color: #3a3a38;
+  height: fit-content;
+  padding: 10px 10px;
+}
+
+#question_list li{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  background-color: #83aaf2;
+  height: 25px;
+  width: 60vw;
+  border: 1px solid #111010;
+  border-radius: 6px;
+  padding: 5px 5px;
 }
 
 #answer_area {
@@ -65,28 +172,6 @@ body {
   align-items: center;
   border: 2px solid #3f3204;
   border-radius: 5px;
-}
-
-.p_answer {
-  background-color: #9f9999;
-  color: #111010;
-  width: 40vw;
-  margin-top: 10px;
-  text-align: left;
-  padding: 5px 5px;
-}
-
-
-#answer_box{
-  background-color: #bdeb9a;
-  color: #111010;
-  width: 60px;
-  height: 30px;
-  margin-top: 10px;
-  text-align: left;
-  padding: 5px 5px;
-  font-size: 25px;
-  text-align: center;
 }
 
 .btn_submit {
@@ -104,44 +189,42 @@ body {
 }
 
 #score {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
   width: 65vw;
   height: fit-content;
+  min-height: 600px;
   background-color: black;
   color: #fafafa;
   border: 2px solid #fafafa;
   border-radius: 5px;
 }
-.hidden{
-  
- visibility: hidden;
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 
-#welcome{
+/*Media query: Tablet and larger (768px and up)*/
+@media screen and (min-width: 700px) {
+
+  #select_game {
     position: absolute;
-    background-color: rgba(32, 135, 139, 0.7);
-    bottom: 30px;
-    width: 45vw;
-    min-height: 300px;
-    padding-top: 40px;
-    padding-left: 10px;
+    background-color: rgba(32, 135, 139, 0.2);
+    left: 4vw;
+    bottom: 2vh;
+    width: 75vw;
+    height: 65vh;
+    padding: 10px 10px;
     border-radius: 10px;
-}
-#welcome h2{
-  font-size: 35px;
-}
-#start{
-  margin-top: 20px;
-  border-radius: 2px;
-  padding: 15px 32px;
-  font-size: 25px;
-  font-weight: 600;
-  background-color: #a7a7a5;
-  color: #0d0d0d;
-  border: 2px solid #f3f3eb;
-  border-radius: 10px;
-  box-shadow:5px 5px 5px #9f9999;
-}
-#start:hover {
-  background-color: #83aaf2;
+    color: #fafafa;
+    text-align: center;
+    border-radius: 5px;
+  }
+
 }
